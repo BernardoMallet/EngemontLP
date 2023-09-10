@@ -1,0 +1,352 @@
+/* ESTILOS GERAL E RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CABEÇALHO */
+#topHeader .nav-link {
+    color: #13192E;
+}
+
+#topHeader .nav .nav-link.nav-link.active {
+    border-bottom: 3px solid #A00000;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #F0F0F5;
+    z-index: 9;
+}
+
+.navbar {
+    width: 100%;
+}
+
+#topHeader .nav-link {
+    text-align: center;
+}
+
+/* SECTION - A ENGEMONT PT1 */
+#container {
+    display: inline-block;
+    position: relative;
+}
+
+#container figcaption {
+    position: absolute;
+    top: 145px;
+    left: 120px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+/* SECTION - ENGEMONT PT2 ISO */
+#iso {
+    width: 100%;
+    height: 535px;
+    margin-top: -16px;
+    gap: 185px;
+
+    background-color: #A00000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#isoImages {
+    display: flex;
+    padding: 30px;
+}
+
+#isoImages img {
+    width: 150px; 
+    height: 150px;
+    margin-left: 30px;
+}
+
+#textGroupSec1 {
+    max-width: 490px; 
+}
+
+#textGroupSec1 > h3 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+#textGroupSec1 > p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #FFFFFF;
+    max-width: 490px;
+}
+
+/* NOSSOS SERVIÇOS */
+#servicos {
+    width: 100%;
+    height: 940px;
+    background-color: #13192E;
+}
+
+#titleService {
+    padding-top: 50px;
+    color: #FFFFFF;
+}
+
+.bi-arrow-down {
+    margin-left: -10px;
+}
+
+#gridService {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+#gridService > figure {
+    display: inline-block;
+    position: relative;
+    padding-top: 35px;
+}
+
+#gridService > figure > figcaption {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: none;
+    text-align: right;
+    bottom: 13px;
+    color: #FFFFFF;
+    right: 90px;
+    letter-spacing: 5%;
+    text-shadow: 0.1em 0.1em black;
+} 
+
+#gridService > figure > img {
+    width: 200px;
+    height: 200px;
+    transition: transform .2s;
+}
+
+#gridService > figure > img:hover {
+    transform: scale(1.1);
+}
+
+/* CLIENTES */
+
+#clientes {
+    width: 100%;
+    height: 700px;
+    background-color: #FFFFFF;
+}
+
+#titleClient {
+    padding-top: 50px;
+    color: #354573;
+}
+
+#rowImgs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+} 
+
+#logoClient {
+    max-width: 350px;
+    max-height: 100px;
+    padding-left: 40px;
+}
+
+#rowImg1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-left: 70px;
+    padding-top: 30px;
+}
+
+#rowImg2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-left: 70px;
+    padding-top: 50px;
+}
+
+#rowImg3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-left: 70px;
+    padding-top: 50px;
+}
+
+/* FALE CONOSCO */
+
+#faleConosco {
+    width: 100%;
+    height: 1080px;
+    background-color: #13192E;
+}
+
+#titleContactUs {
+    padding-top: 50px;
+    color: #FFFFFF;
+}
+
+#phoneAndEmail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 50px;
+    gap: 50%;
+
+    color: #FFFFFF;
+}
+
+#phoneAndEmail span {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: 5%;
+    text-align: center;
+}
+
+#formContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    padding-top: 50px;
+}
+
+#formContact label {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5%;
+    margin-right: 27%;
+    color: #FFFFFF;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+#address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+    gap: 300px;
+}
+
+#fullAddress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fullAddress h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 5%;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+}
+
+#location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 5%;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+/* TRABALHE CONOSCO */
+
+#trabalheConosco {
+    width: 100%;
+    height: 900px;
+    background-color: #FFFFFF;
+}
+
+#titleJobwithUs {
+    padding-top: 50px;
+    color: #354573;
+}
+
+#containerJobWithUs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 50px;
+    gap: 100px;
+}
+
+#formJobWithUs label {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 5%;
+
+    color: #A00000;
+}
+
+#imgJobWithUs img {
+    width: 550px;
+    height: 390px;
+}
+
+#btnFormJobWithUs {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #A00000;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    
+    margin-top: 30px;
+}
+
+#btnFormJobWithUs:hover {
+    background-color: #a00000b7;
+}
