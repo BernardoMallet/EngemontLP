@@ -47,6 +47,16 @@ header {
     color: #FFFFFF;
 }
 
+/*CELULAR */
+@media screen and (max-width:500px) {
+    #container figcaption {
+        font-size: 12px;
+        line-height: 18px;
+        top: 35px;
+        left: 20px;
+    }
+}
+
 /* SECTION - ENGEMONT PT2 ISO */
 #iso {
     width: 100%;
@@ -89,6 +99,50 @@ header {
     line-height: 50px;
     color: #FFFFFF;
     max-width: 490px;
+}
+
+/* CELULAR */
+
+@media screen and (max-width:500px) {
+    #iso {
+        display: block;
+        text-align: center;
+        height: 400px;
+    }
+
+    #isoImages img {
+        width: 80px; 
+        height: 80px;
+        text-align: center;
+    }
+
+    #textGroupSec1 {
+        max-width: 400px; 
+    }
+
+    #textGroupSec1 > h3 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    #textGroupSec1 > p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #FFFFFF;
+        max-width: 400px;
+        text-align: center;
+    }
+}
+
+/*ALINHANDO IMAGENS PARA MEDIDAS MENORES (EX.: IPHONE SE) */
+@media screen and (max-width:380px) {
+    #isoImages img {
+        margin-left: 18px;
+    }
 }
 
 /* NOSSOS SERVIÇOS */
@@ -140,6 +194,35 @@ header {
 
 #gridService > figure > img:hover {
     transform: scale(1.1);
+}
+
+/*CELULAR */
+
+@media screen and (max-width:500px) {
+    #servicos {
+        height: 1350px;
+    }
+
+    #titleService {
+        margin-left: 20px;
+    }
+
+    #gridService {
+        text-align: center;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #gridService > figure > img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #gridService > figure > figcaption {
+        right: 25px;
+        bottom: 5px;
+        font-size: 11px;
+        letter-spacing: none;
+    }
 }
 
 /* CLIENTES */
@@ -194,6 +277,49 @@ header {
     gap: 100px;
     margin-left: 70px;
     padding-top: 50px;
+}
+
+
+/* CELULAR */
+@media screen and (max-width:500px) {
+    #clientes {
+        height: 500px;
+    }
+
+    #titleClient {
+        margin-left: 20px;
+    }
+
+    #rowImgs {
+        white-space: nowrap;
+    }
+
+    #logoClient {
+        max-width: 100px;
+        max-height: 100px;
+        padding-left: 0px;
+    }
+
+    #rowImg1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding-top: 15px;
+    }
+
+    #rowImg2 {
+        margin-left: 12px;
+        white-space: nowrap;
+        gap: 20px;
+        padding-top: 30px;
+    }
+
+    #rowImg3 {
+        gap: 20px;
+        margin-left: 12px;
+        white-space: nowrap;
+        padding-top: 30px;
+    }
 }
 
 /* FALE CONOSCO */
@@ -297,6 +423,66 @@ iframe {
     border-radius: 20px;
 }
 
+/*CELULAR */
+@media screen and (max-width:500px) {
+    #faleConosco {
+        height: 1200px;
+    }
+
+    #titleContactUs {
+        margin-left: 20px;
+    }
+
+    #phoneAndEmail {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    #formContact {
+        padding-top: 50px;
+    }
+    #formContact label {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        margin-left: 26%;
+    }
+
+    #address {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    
+        gap: 50px;
+    }
+
+    #fullAddress h3 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 25px;
+        letter-spacing: 5%;
+        color: #FFFFFF;
+        padding-bottom: 20px;
+    }
+
+    #location {
+        gap: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 2%;
+    }
+
+    iframe {
+        width: 300px;
+        height: 300px;
+        border-radius: 30px;
+    }
+}
+
 /* TRABALHE CONOSCO */
 
 #trabalheConosco {
@@ -349,4 +535,34 @@ iframe {
 
 #btnFormJobWithUs:hover {
     background-color: #a00000b7;
+}
+
+@media screen and (max-width:500px) {
+    #trabalheConosco {
+        height: 700px;
+    }
+
+    #titleJobwithUs {
+        margin-left: 20px;
+    }
+
+    #containerJobWithUs {
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 60px;
+        gap: 50px;
+    }
+
+    #formJobWithUs label {
+        text-align: center;
+    }
+
+    #formJobWithUs {
+        width: 80%;
+    }
+
+    #imgJobWithUs {
+        display: none;
+    }
 }
