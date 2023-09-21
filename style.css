@@ -13,6 +13,7 @@
 
 #topHeader .nav .nav-link.nav-link.active {
     border-bottom: 3px solid #A00000;
+    padding-bottom: 0;
 }
 
 header {
@@ -49,10 +50,14 @@ header {
 
 /*CELULAR */
 @media screen and (max-width:500px) {
+    #container {
+        height: 200px;
+    }
+
     #container figcaption {
         font-size: 12px;
         line-height: 18px;
-        top: 35px;
+        top: 65px;
         left: 20px;
     }
 }
@@ -103,17 +108,28 @@ header {
 
 /* CELULAR */
 
+/*ALINHANDO IMAGENS PARA MEDIDAS MENORES (EX.: IPHONE SE) */
+@media  screen and (max-width: 380px) {
+    #isoImages {
+        margin-left: 18%;
+    }
+}
+
 @media screen and (max-width:500px) {
     #iso {
         display: block;
         text-align: center;
-        height: 400px;
+        height: 200px;
+    }
+
+    #isoImages {
+        padding: 20px;
     }
 
     #isoImages img {
-        width: 80px; 
-        height: 80px;
-        text-align: center;
+        width: 40px; 
+        height: 40px;
+        margin-left: 16%;
     }
 
     #textGroupSec1 {
@@ -121,29 +137,22 @@ header {
     }
 
     #textGroupSec1 > h3 {
-        font-size: 18px;
+        font-size: 12px;
         font-weight: 600;
-        line-height: 24px;
+        line-height: 12px;
         color: #FFFFFF;
         text-align: center;
     }
 
     #textGroupSec1 > p {
-        font-size: 14px;
+        font-size: 9px;
         font-weight: 400;
-        line-height: 30px;
+        line-height: 15px;
         color: #FFFFFF;
-        max-width: 400px;
         text-align: center;
     }
 }
 
-/*ALINHANDO IMAGENS PARA MEDIDAS MENORES (EX.: IPHONE SE) */
-@media screen and (max-width:380px) {
-    #isoImages img {
-        margin-left: 18px;
-    }
-}
 
 /* NOSSOS SERVIÇOS */
 #servicos {
@@ -171,20 +180,38 @@ header {
     display: inline-block;
     position: relative;
     padding-top: 35px;
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 13px;
 }
 
+
+
 #gridService > figure > figcaption {
+    position: absolute;
+    top: 160px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 75px;
+    background: linear-gradient(#4f4f4f5b);
+    backdrop-filter: grayscale(52%);
+} 
+
+#gridService > figure > figcaption > p {
     position: absolute;
     font-size: 14px;
     font-weight: 700;
     line-height: none;
     text-align: right;
-    bottom: 13px;
     color: #FFFFFF;
-    right: 90px;
+    right: 10px;
+    bottom: 0;
     letter-spacing: 5%;
-    text-shadow: 0.1em 0.1em black;
-} 
+    border-radius: 10%;
+    text-shadow: 0.1em 0.1em rgb(0, 0, 0);
+}
 
 #gridService > figure > img {
     width: 200px;
@@ -200,7 +227,7 @@ header {
 
 @media screen and (max-width:500px) {
     #servicos {
-        height: 1350px;
+        height: 1450px;
     }
 
     #titleService {
@@ -218,10 +245,19 @@ header {
     }
 
     #gridService > figure > figcaption {
-        right: 25px;
-        bottom: 5px;
+        top: 110px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 150px;
+        height: 75px;
+    }
+
+    #gridService > figure > figcaption > p {
+        right: -15px;
+        bottom: 0;
         font-size: 11px;
-        letter-spacing: none;
+        letter-spacing: 1%;
     }
 }
 
@@ -551,7 +587,6 @@ iframe {
         flex-direction: column;
 
         padding-top: 60px;
-        gap: 50px;
     }
 
     #formJobWithUs label {
