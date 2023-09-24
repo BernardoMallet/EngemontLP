@@ -16,9 +16,6 @@
     padding-bottom: 0;
 }
 
-.text-secondary {
-    cursor: not-allowed;
-}
 
 header {
     position: sticky;
@@ -391,7 +388,7 @@ header {
 /* FALE CONOSCO */
 #faleConosco {
     width: 100%;
-    height: 1080px;
+    height: 1180px;
     background-color: #13192E;
 }
 
@@ -440,6 +437,10 @@ header {
 textarea {
     height: 100px;
     resize: none;
+}
+
+.g-recaptcha {
+    padding-top: 10px;
 }
 
 #btnFormContact {
@@ -656,6 +657,10 @@ iframe {
     font-weight: 700;
     
     margin-top: 30px;
+}
+
+select > option {
+    gap: 5px;
 }
 
 #btnFormJobWithUs:hover {
